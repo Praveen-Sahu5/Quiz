@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="createac.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registerForm" method="post"
+            action="https://script.google.com/macros/s/AKfycbxdKnpsHrwglXNSrjIjF_rosCP5LZuxbwqU6GJxG5W9Gw8OSg_fLFO5NVXI8F3T1Q64bw/exec">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" placeholder="Create a password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"
+                required>
+
+            <label for="role">Role:</label>
+            <select id="role" name="Role" required>
+                <option value="admin">Admin</option>
+                <option value="quizCreator">Quiz Creator</option>
+                <option value="quizTaker">Quiz Taker</option>
+            </select>
+
+            <button type="submit" value="submit" id="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="signin.html">Sign in here</a>.</p>
+    </div>
+
+    <script src="Register.js"></script>
+</body>
+
+</html>

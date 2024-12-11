@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Management</title>
+  <link rel="stylesheet" href="Admin.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  
+  <header>
+    <div class="company-name">QuizeByte</div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="Quiz.html"><i class="fas fa-question-circle"></i> Take Quiz</a></li>
+        <li><a href="Admin.html"><i class="fas fa-edit"></i> Create Quiz</a></li>
+        <li><a href="Faq.html"><i class="fas fa-info-circle"></i> FAQ</a></li>
+      </ul>
+    </nav>
+    <button class="logout-btn">Logout</button>
+  </header>
+
+ 
+  <div class="main-content">
+    
+    <div class="stats">
+      <div class="stat-box">Teachers: 200</div>
+      <div class="stat-box">Students: 3000</div>
+      <div class="stat-box">Subjects: 8</div>
+    </div>
+
+    
+    <div class="form-layout">
+      <div class="add-subject">
+        <h2>Create Subject</h2>
+        <input type="text" id="subject-name" placeholder="Enter Subject Name">
+        <button onclick="addSubject()">Add Subject</button>
+      </div>
+      <div class="add-question">
+        <h2>Create Questions</h2>
+        <select id="subject-select">
+          <option value="">Choose Subject</option>
+        </select>
+        <input type="text" id="question" placeholder="Enter Your Question">
+        <input type="text" id="option1" placeholder="Option 1">
+        <input type="text" id="option2" placeholder="Option 2">
+        <input type="text" id="option3" placeholder="Option 3">
+        <input type="text" id="option4" placeholder="Option 4">
+        <button onclick="addQuestion()">Add Question</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Admin.js"></script>
+</body>
+</html>
